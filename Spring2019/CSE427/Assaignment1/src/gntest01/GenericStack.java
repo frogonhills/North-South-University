@@ -9,14 +9,17 @@ public class GenericStack {
 		myStringStack.push("alif");
 		myStringStack.push("shifat");
 		myStringStack.push("jafor");
-		myStringStack.push("zubayer");
+		myStringStack.push(null);
+		evm.push(100);
 		
 		
 		System.out.println(myStringStack.peek());
-		System.out.println(evm.isEmpty());
-		System.out.println(myStringStack.peek());
-		System.out.println(myStringStack.pop());
-		System.out.println(myStringStack.peek());
+		System.out.println(evm.peek());
+		//System.out.println(evm.isEmpty());
+		//System.out.println(myStringStack.peek());
+		//System.out.println(myStringStack.pop());
+		//System.out.println(myStringStack.peek());
+		
 	}
 
 }

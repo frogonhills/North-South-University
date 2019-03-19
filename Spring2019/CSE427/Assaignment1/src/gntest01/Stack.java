@@ -11,10 +11,21 @@ public class Stack<T> {
 	}
 	
 	
-	public void push(T newValue){
-		StackElement<T> newElement = new StackElement<T>(newValue , top);
-		top = newElement;
-		size++;
+	public int  push(T newValue){    /// it was void ///
+		if(newValue == null){
+			System.out.println("its null");
+			
+		}
+		else{
+			StackElement<T> newElement = new StackElement<T>(newValue , top);
+			top = newElement;
+			size++;
+			return 0 ;
+			
+		}
+		
+		return 1 ;
+		
 		
 	}
 	
