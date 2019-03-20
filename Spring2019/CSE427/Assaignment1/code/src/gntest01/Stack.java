@@ -14,6 +14,9 @@ public class Stack<T> {
 	public int  push(T newValue){    /// it was void ///
 		if(newValue == null){
 			System.out.println("its null");
+			StackElement<T> newElement = new StackElement<T>(newValue , top);
+			top = newElement;
+			size++;
 			
 		}
 		else{
@@ -61,7 +64,9 @@ public class Stack<T> {
 		
 	}
 	
-	
+	public int getSize(){
+		return size;
+	}
 	
 	
 	
