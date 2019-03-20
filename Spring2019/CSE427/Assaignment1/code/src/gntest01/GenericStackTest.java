@@ -40,8 +40,26 @@ public class GenericStackTest {
 		br = myStringStack.push("rahim");
 		assertEquals(0 , br);
 		
+		assertEquals(myStringStack.push("alif") , myStringStack.pop());
+		myStringStack.push("mofiz");
+		assertEquals(myStringStack.pop(), "mofiz");
+		/// koikta assert false koira dekhbo
+		
 		
 	}
+	
+	
+	public void pop_test(){
+		Stack<Integer> poptest = new Stack<Integer>();
+		
+		poptest.push(14);
+		assertFalse(poptest.isEmpty());
+		assertEquals(poptest.peek() , poptest.pop());
+		assertTrue(poptest.isEmpty());
+		
+	}
+	
+	
 
 	
 
